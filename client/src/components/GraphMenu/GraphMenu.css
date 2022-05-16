@@ -1,0 +1,12 @@
+.graphmenu {
+    border-left: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h3 {
+    padding: 5%;
+}

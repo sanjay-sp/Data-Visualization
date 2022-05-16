@@ -1,0 +1,14 @@
+.panel {
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5vh;
+    min-height: 80vh;
+    min-width: 30vw;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: auto;
+    position: relative;
+}

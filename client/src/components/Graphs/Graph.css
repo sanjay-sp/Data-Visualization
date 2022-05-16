@@ -1,0 +1,37 @@
+.graph {
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+}
+
+.description img {
+    cursor: move;
+}
+
+.graph p {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.graph button {
+    background-color: #45a0d9;
+    color: white;
+    width: 45%;
+    height: 20%;
+    margin: 5%;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
