@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Chart as ChartJS,
   ArcElement,
@@ -23,7 +23,12 @@ ChartJS.register(
 
 
 
-function Chart({chartType, months}) {
+function Chart({chartType, months, dbData}) {
+  const [list,setList] = useState(dbData);
+  useEffect(()=>{
+    setList(dbData);
+    console.log(chartType);
+  })
     const options = {
         responsive: true,
         plugins: {
@@ -37,8 +42,11 @@ function Chart({chartType, months}) {
         },
       };
       
-      const labels = months;
-      
+      const labels = [];
+      // for (let i = 0; 1 < dbData.length; i++) {
+      //   console.log(dbData[i].year);
+        
+      // }
       const dataForBar = {
         labels,
         datasets: [
